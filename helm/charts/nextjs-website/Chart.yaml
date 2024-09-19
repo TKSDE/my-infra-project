@@ -1,0 +1,4 @@
+apiVersion: v2
+name: nextjs-website
+description: A Helm chart for deploying a Next.js website
+version: 0.1.0

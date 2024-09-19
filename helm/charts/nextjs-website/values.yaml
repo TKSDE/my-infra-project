@@ -1,0 +1,16 @@
+replicaCount: 2
+
+image:
+  repository: your-docker-repo/nextjs-website
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: LoadBalancer
+  port: 80
+
+ingress:
+  enabled: true
+  nginx.ingress.kubernetes.io/ssl-redirect: "false"
+
+resources: {}
